@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Reviews</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <style>
+        /* General Styling for All Pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40;
+    padding: 10px 0;
+    color: white;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar .navbar-nav li {
+    margin-right: 20px;
+}
+
+.navbar .navbar-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav li a:hover {
+    text-decoration: underline;
+}
+
+/* Review Section Styling */
+.review-section {
+    padding: 40px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #dee2e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.review-form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.review-form h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 15px;
+}
+
+.review-form .form-group {
+    margin-bottom: 15px;
+}
+
+.review-form .form-control {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+.review-form .form-control:focus {
+    border-color: #007bff;
+    background-color: #ffffff;
+}
+
+.review-form .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.review-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.review-list {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-list h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.review-item {
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.review-rating {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+.review-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+/* Footer Styling (If any) */
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button, .btn {
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    opacity: 0.8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-form {
+        margin-bottom: 20px;
+    }
+
+    .review-item {
+        padding: 10px 0;
+    }
+}
+
+    </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">EthniQ</a>
+                <div class="navbar-nav ms-auto">
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Review Section -->
+        <div class="review-section">
+            <div class="container">
+                <!-- Write Your Review Form -->
+                <div class="review-form">
+                    <h3>Write Your Review</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username"
+                                class="form-control"
+                                placeholder="Enter your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rating">Rating</label>
+                            <select id="rating" class="form-control" required>
+                                <option value="1">1 Star</option>
+                                <option value="2">2 Stars</option>
+                                <option value="3">3 Stars</option>
+                                <option value="4">4 Stars</option>
+                                <option value="5">5 Stars</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-text">Your Review</label>
+                            <textarea id="review-text" class="form-control"
+                                rows="4" placeholder="Write your review here..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit
+                            Review</button>
+                    </form>
+                </div>
+
+                <!-- Existing Reviews List -->
+                <div class="review-list">
+                    <h3>Customer Reviews</h3>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="review-author">Preeti Sharma</span>
+                            <span class="review-rating">★★★★☆</span>
+                        </div>
+                        <p class="review-text">Great product! Totally worth the
+                            price. I loved the quality and the comfort.</p>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="review-author">Rose Brown</span>
+                            <span class="review-rating">★★★☆☆</span>
+                        </div>
+                        <p class="review-text">It's good, but the size runs a
+                            bit small. Would recommend sizing up.</p>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-header">
+                            <span class="review-author">Aayusha</span>
+                            <span class="review-rating">★★★★★</span>
+                        </div>
+                        <p class="review-text">Amazing! Exceeded my
+                            expectations. The material is great, and it fits
+                            perfectly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 EthniQ. All Rights Reserved.</p>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

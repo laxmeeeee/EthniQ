@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Send a Gift</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to bottom, #1a1a1a, #262626);
+                color: #f0f0f0;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 30px;
+            }
+
+            .navbar {
+                background: linear-gradient(90deg, #000, #0056b3, #3a007d, #0056b3, #000);
+                padding: 10px 20px;
+            }
+
+            .navbar-brand {
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .navbar-brand:hover {
+                color: #ddd;
+            }
+
+            .nav-link {
+                color: #fff;
+            }
+
+            .nav-link:hover {
+                color: #ddd;
+            }
+
+            .gift-section {
+                background-color: #2c2c2c;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                margin-bottom: 20px;
+            }
+
+            .card {
+                border: none;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                background-color: #2c2c2c;
+            }
+
+            .card-img-top {
+                width: 100%;
+                height: auto;
+                max-height: 400px;
+                object-fit: cover;
+            }
+
+            .card-body {
+                padding: 20px;
+                color: #f0f0f0;
+            }
+
+            .card-title {
+                font-size: 1rem;
+                font-weight: bold;
+                color: #ddd;
+                margin-bottom: 10px;
+            }
+
+            .card-text {
+                font-size: 0.9rem;
+                margin-bottom: 15px;
+            }
+
+            .badge {
+                font-size: 0.8rem;
+                padding: 5px 10px;
+                border-radius: 12px;
+            }
+
+            .btn-primary {
+                background-color: #0056b3;
+                border: none;
+                color: #fff;
+                font-size: 0.9rem;
+                padding: 8px 15px;
+                border-radius: 20px;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn-primary:hover {
+                background-color: #003f87;
+            }
+
+            .card-actions {
+                text-align: center;
+            }
+
+            .recipient-form {
+                display: none;
+                margin-top: 20px;
+                background-color: #1a1a1a;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px 0;
+                color: #ddd;
+                background-color: #1a1a1a;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">EthniQ</a>
+                <div class="navbar-nav ms-auto">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Gift Page Content -->
+        <div class="container">
+            <div class="gift-section">
+                <h3 class="text-center">Send a Gift</h3>
+                <p class="text-center">Spread joy by sending gifts to your loved
+                    ones! Browse our curated selection and choose the perfect
+                    gift.</p>
+
+                <!-- Product Cards in One Row -->
+                <div class="row">
+                    <!-- Product 1 -->
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img
+                                src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/lifestyle/1000014038355-Yellow-Mustard-1000014038355_02-2100.jpg"
+                                class="card-img-top" alt="Product Image">
+                            <div class="card-body">
+                                <h6 class="card-title">MELANGE Floral Print
+                                    Kurta</h6>
+                                <p class="card-text">
+                                    <span
+                                        class="text-danger fw-bold">₹11049</span>
+
+                                    <div class="card-actions mt-3">
+                                        <button class="btn btn-primary btn-sm"
+                                            onclick="showRecipientForm()">Send
+                                            as
+                                            Gift</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2 -->
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img
+                                    src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/lifestyle/1000014038004-Black-Black-1000014038004_03-2100.jpg"
+                                    class="card-img-top" alt="Product Image">
+                                <div class="card-body">
+                                    <h6 class="card-title">MELANGE Floral Print
+                                        Kurta</h6>
+                                    <p class="card-text">
+                                        <span
+                                            class="text-danger fw-bold">₹13249</span>
+
+                                        <div class="card-actions mt-3">
+                                            <button
+                                                class="btn btn-primary btn-sm"
+                                                onclick="showRecipientForm()">Send
+                                                as
+                                                Gift</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 3 -->
+                            <div class="col-md-3 mb-4">
+                                <div class="card">
+                                    <img
+                                        src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/lifestyle/1000014078835-Green-Emerald-1000014078835_02-2100.jpg"
+                                        class="card-img-top"
+                                        alt="Product Image">
+                                    <div class="card-body">
+                                        <h6 class="card-title">MELANGE Floral
+                                            Print
+                                            Kurta</h6>
+                                        <p class="card-text">
+                                            <span
+                                                class="text-danger fw-bold">₹9949</span>
+
+                                            <div class="card-actions mt-3">
+                                                <button
+                                                    class="btn btn-primary btn-sm"
+                                                    onclick="showRecipientForm()">Send
+                                                    as
+                                                    Gift</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 4 -->
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <img
+                                            src="https://media.landmarkshops.in/cdn-cgi/image/h=831,w=615,q=85,fit=cover/lifestyle/1000014876141-Red-Maroon-1000014876141_02-2100.jpg"
+                                            class="card-img-top"
+                                            alt="Product Image">
+                                        <div class="card-body">
+                                            <h6 class="card-title">MELANGE
+                                                Floral Print
+                                                Kurta</h6>
+                                            <p class="card-text">
+                                                <span
+                                                    class="text-danger fw-bold">₹13949</span>
+
+                                                <div class="card-actions mt-3">
+                                                    <button
+                                                        class="btn btn-primary btn-sm"
+                                                        onclick="showRecipientForm()">Send
+                                                        as
+                                                        Gift</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Recipient Details Form -->
+                                <div class="recipient-form" id="recipientForm">
+                                    <h5 class="text-center">Recipient
+                                        Details</h5>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="recipientName"
+                                                class="form-label">Recipient
+                                                Name</label>
+                                            <input type="text"
+                                                class="form-control"
+                                                id="recipientName"
+                                                placeholder="Enter recipient's name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipientEmail"
+                                                class="form-label">Recipient
+                                                Email</label>
+                                            <input type="email"
+                                                class="form-control"
+                                                id="recipientEmail"
+                                                placeholder="Enter recipient's email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="recipientAddress"
+                                                class="form-label">Recipient
+                                                Address</label>
+                                            <textarea class="form-control"
+                                                id="recipientAddress" rows="3"
+                                                placeholder="Enter recipient's address"></textarea>
+                                        </div>
+                                        <!-- Special Message Section -->
+                                        <div class="mb-3">
+                                            <label for="specialMessage"
+                                                class="form-label">Special
+                                                Message</label>
+                                            <textarea class="form-control"
+                                                id="specialMessage" rows="3"
+                                                placeholder="Write a special message to accompany the gift😊✨"></textarea>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit"
+                                                class="btn btn-primary">Send
+                                                Gift</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Footer -->
+                            <footer>
+                                <p>&copy; 2024 EthniQ. All Rights Reserved.</p>
+                            </footer>
+
+                            <script
+                                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+                            <script>
+            function showRecipientForm() {
+                const form = document.getElementById('recipientForm');
+                form.style.display = 'block';
+            }
+        </script>
+                        </body>
+                    </html>

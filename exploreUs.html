@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Explore Us</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <style>
+        /* Navbar styling */
+        .navbar {
+            background-color: #343a40;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('https://specials-images.forbesimg.com/dam/imageserve/919391138/960x0.jpg?fit=scale ') no-repeat center center;
+            background-size: cover;
+           
+            padding: 100px 0;
+            text-align: center;
+            color: rgb(245, 244, 241);
+        }
+
+        /* Section headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Meet the team section */
+        .team-member {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .team-member h5 {
+            margin-top: 10px;
+        }
+        .team-member:hover{
+            transform: scale(1.1);
+            background-color: #706c6cb7;
+            transition: background-color 1s ease;
+        }
+
+        /* Timeline Section */
+        .timeline-item {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .timeline-item .year {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .timeline-item .description {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        /* Core Values Section */
+        .core-values {
+            display: flex;
+            justify-content: space-around;
+            text-align: center; 
+           
+        }
+
+        .core-values .value {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+        }
+        .core-values :hover{
+            background-color: #b4e3f0;
+            transition: background-color 1s ease;
+           transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">EthniQ </a>
+                <div class="navbar-nav ms-auto">
+
+                    <a class="nav-link" href="reviews.html">Reviews</a>
+                    <a class="nav-link" href="login.html">Login</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Explore Our Story</h1>
+            <p>Discover who we are, what drives us, and how we bring value
+                to
+                you.</p>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="container py-5">
+            <h2 class="section-header">About Us</h2>
+            <p>We are a company dedicated to delivering high-quality products
+                that make everyday living easier and better for our customers.
+                With a focus on innovation and customer satisfaction, we
+                continuously strive to meet the needs of those who trust us with
+                their purchases. All our products are <b>made in India</b> and
+                are
+                designed with a commitment to sustainability, ensuring that they
+                do no harm to the environment. By using eco-friendly materials
+                and ethical production processes, we aim to contribute
+                positively to both society and nature.</p>
+            <p>Our dedication to quality extends beyond just the products we
+                offer; it is embedded in every aspect of our business. From
+                sourcing materials locally to implementing environmentally
+                conscious practices, we ensure that each product is a step
+                towards a greener future. We believe in creating a positive
+                impact by empowering communities and promoting sustainability.
+                Through continuous research and development, we remain at the
+                forefront of innovation, delivering solutions that enhance the
+                lives of our customers while preserving the planet for future
+                generations.</p>
+        </section>
+
+        <!-- Meet the Team Section -->
+        <section class="container py-5">
+            <h2 class="section-header">Meet the Team</h2>
+            <p>Our team is a group of passionate and dedicated professionals,
+                each committed to driving the company's mission forward. With
+                diverse skills and expertise, we work collaboratively to
+                innovate, solve challenges, and deliver exceptional products.
+                Together, we are united by a shared vision of making everyday
+                living better for our customers and contributing to a
+                sustainable future.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img
+                            src="https://static.vecteezy.com/system/resources/previews/020/389/525/original/hand-drawing-cartoon-girl-cute-girl-drawing-for-profile-picture-vector.jpg"
+                            alt="Team Member">
+                        <h5>Laxmi Kumhar</h5>
+                        <p>CEO & Founder</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img
+                            src="https://cdn.siasat.com/wp-content/uploads/2020/07/Mukesh-Ambani-1.jpg"
+                            alt="Team Member">
+                        <h5>Mukesh Ambani</h5>
+                        <p>Chief Marketing Officer</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img
+                            src="https://inforulz.com/wp-content/uploads/2020/02/Elon-Musk-Wiki-1024x915.jpg"
+                            alt="Team Member">
+                        <h5>Elon Musk</h5>
+                        <p>Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Timeline Section -->
+        <section class="container py-5">
+            <h2 class="section-header">Company Timeline</h2>
+            <div class="timeline-item">
+                <div class="year">2021</div>
+                <div class="description">Launched our first product.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2022</div>
+                <div class="description">Expanded to international
+                    markets.</div>
+            </div>
+            <div class="timeline-item">
+                <div class="year">2023</div>
+                <div class="description">Reached over 1 million customers
+                    worldwide.</div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="container py-5">
+            <h2 class="section-header mb-4">Our Core Values</h2>
+            <p>Our core values are built on a foundation of <b>integrity</b>,
+                <b>innovation</b>, and <b>sustainability</b>. We prioritize
+                customer
+                satisfaction by consistently delivering high-quality products
+                that meet their needs. We believe in ethical practices,
+                transparency, and social responsibility, ensuring our actions
+                have a positive impact on the environment and communities.
+                Together, we strive for excellence, always seeking new ways to
+                improve and create value for our customers.</p>
+            <div class="core-values mt-5">
+                <div class="value">
+                    <h4>Quality</h4>
+                    <p>We provide the best products, ensuring excellent
+                        quality
+                        and customer satisfaction.</p>
+                </div>
+                <div class="value">
+                    <h4>Innovation</h4>
+                    <p>We embrace new ideas and constantly innovate to meet
+                        our
+                        customers' needs.</p>
+                </div>
+                <div class="value">
+                    <h4>Sustainability</h4>
+                    <p>We are committed to sustainable practices that
+                        protect
+                        the environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 EthniQ. All rights reserved.</p>
+        </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
